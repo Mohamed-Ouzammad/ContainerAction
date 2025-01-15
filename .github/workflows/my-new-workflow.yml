@@ -1,14 +1,14 @@
 name : Test Manual Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      Environnemment:
-        description: 'The environment i need to deploy on'
-        required: true
-        default: '/dev'
+    workflow_dispatch:
+      inputs:
+        Environnemment:
+          description: 'The environment i need to deploy on'
+          required: true
+          default: '/dev'
 
-   jobs:
+jobs:
     manual-job:
         runs-on: ubuntu-latest
 
