@@ -13,12 +13,11 @@ on:
         runs-on: ubuntu-latest
 
         steps:
-          
-name: Example
-          run: |
-           echo "Mon exemple"
-           echo "Env name: ${{ github.event.inputs.Environment }}"
-name: Github Variable
-        run: echo '${{ toJSON(github) }}'
-name: Runner Variable
-      run: echo '${{ toJSON(runner) }}'
+          - name: Example
+           run: |
+            echo "Mon exemple"
+            echo "Env name: ${{ github.event.inputs.Environment }}"
+          -name: Github Variable
+           run: echo '${{ toJSON(github) }}'
+          -name: Runner Variable
+           run: echo '${{ toJSON(runner) }}'
