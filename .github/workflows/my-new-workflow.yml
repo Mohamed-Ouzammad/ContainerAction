@@ -17,7 +17,7 @@ on:
            run: |
             echo "Mon exemple"
             echo "Env name: ${{ github.event.inputs.Environment }}"
-          -name: Github Variable
+          - name: Github Variable
            run: echo '${{ toJSON(github) }}'
-          -name: Runner Variable
+          - name: Runner Variable
            run: echo '${{ toJSON(runner) }}'
